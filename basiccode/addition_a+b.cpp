@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cmath>
+#include<string>
 
 using namespace std;
 
@@ -9,10 +10,13 @@ int main()
     double b=0.0;
     double a;
     int n;
+    string first_statement,second_statement,third_statement;
     
-    
-    cout<<"This code will add n numbrs together!!"<<endl;
-    cout<<"Enter the total numbers to be added: "<<endl;
+    first_statement="This code will add n numbrs together!!";
+    second_statement="Enter the total numbers to be added: ";
+    third_statement=" The sum of the all the numbers are : ";
+    cout<<first_statement<<endl;
+    cout<<second_statement<<endl;
     cin>>n;
     
     for (int i=0;i<n;i++)
@@ -22,7 +26,7 @@ int main()
         b=b+a;
     }
     
-    cout<<" The sum of the all the numbers are : "<<b<<endl;
+    cout<<third_statement<<b<<endl;
     
     return 0;
 }
